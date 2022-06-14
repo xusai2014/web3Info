@@ -34,6 +34,7 @@ export default ({setLoadStart,loadStart}) => {
         });
     }, [])
 
+    // @ts-ignore
     return <>
         <Head>
             <title>车唧唧</title>
@@ -59,13 +60,14 @@ export default ({setLoadStart,loadStart}) => {
                 简介：{item.description}
             </div>
         </div>
-        
+
         <div style={{marginBottom: '60px'}}>
         <MainBody
             matchParam={{
-                o_name:item.name
+                // @ts-ignore
+                o_name: username
             }}
             setLoadStart={setLoadStart} loadStart={loadStart}></MainBody>
-        </div>    
+        </div>
     </>
 }

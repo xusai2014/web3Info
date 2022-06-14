@@ -65,7 +65,7 @@ export default ({loadStart, setLoadStart, matchParam = {o_name:""}, setShareObj 
 
     }, [loadStart])
     const debouncedSave = _.debounce(() => {
-        if (getScrollTop() + getClientHeight() >= getScrollHeight()) {
+        if (getScrollTop() + getClientHeight() + 15 >= getScrollHeight()) {
             getMore();
         }
     }, 500)

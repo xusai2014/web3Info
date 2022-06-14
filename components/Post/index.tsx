@@ -25,7 +25,7 @@ export default ({
     const getImgUrl = (o_name)=>{
         let url = '/auto-sales-cube.png';
         Object.keys(AVATAR_LIST).map((key)=>{
-            if(AVATAR_LIST[key].name === o_name){
+            if(key === o_name){
                 url  =  AVATAR_LIST[key].url
             }
         })
@@ -36,8 +36,17 @@ export default ({
     function getKey(o_name){
         let keyStr = ''
         Object.keys(AVATAR_LIST).map((key) => {
-            if(AVATAR_LIST[key].name === o_name){
+            if(key=== o_name){
                 keyStr = key;
+            }
+        })
+        return keyStr
+    }
+    function getName(o_name){
+        let keyStr = ''
+        Object.keys(AVATAR_LIST).map((key) => {
+            if(key=== o_name){
+                keyStr = AVATAR_LIST[key].name;
             }
         })
         return keyStr
@@ -55,7 +64,7 @@ export default ({
             <div style={{margin: '0 0 5px 0', cursor: 'pointer'}} onClick={()=>{
                 Router.push(`/post/${_id}`)
             }}>
-                <div className={styles.name}>{o_name}</div>
+                <div className={styles.name}>{getName(o_name)}</div>
                 <div className={styles.title}>{t_title}</div>
 
             </div>
