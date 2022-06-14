@@ -8,6 +8,7 @@ import Share from "../Share";
 export default ({
                     o_name = '',
                     o_ctime = '',
+                    createdAt = '',
                     t_desc = '',
                     t_img,
                     t_title = '',

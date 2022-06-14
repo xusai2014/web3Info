@@ -24,7 +24,7 @@ export default ({setLoadStart,loadStart}) => {
     useEffect(()=>{
          // @ts-ignore
          shareFunc(global.wx, {
-            title: `车唧唧-${item.name}频道`, // 分享标题
+            title: `屮急急-${item.name}频道`, // 分享标题
               desc: item.description, // 分享描述
               link: window.location.href, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
               imgUrl: item.url, // 分享图标
@@ -37,10 +37,10 @@ export default ({setLoadStart,loadStart}) => {
     // @ts-ignore
     return <>
         <Head>
-            <title>车唧唧</title>
+            <title>屮急急</title>
             <link rel="icon" href="/favicon.jpg"/>
-            <meta name={'keywords'} content={'车唧唧,汽车社区,汽车界的小家雀儿,汽车快讯'}/>
-            <meta name={'description'} content={'车唧唧口号是汽车社区新势力，欢迎大家来到这里一起唧唧歪歪，有态度、更年轻、有个性的汽车发声根据地'}/>
+            <meta name={'keywords'} content={'屮急急,web3资讯'}/>
+            <meta name={'description'} content={'屮唧唧-web3内容资讯社区，一起唧唧歪歪，欢迎大家来到这里一起唧唧歪歪，有态度、更年轻、有个性的发声根据地'}/>
         </Head>
         <Header></Header>
         <div className={styles.container}>

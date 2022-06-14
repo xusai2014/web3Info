@@ -34,7 +34,7 @@ export default function Home({setLoadStart, loadStart}) {
     return (
         <>
             <Head>
-                <title>车唧唧</title>
+                <title>屮急急</title>
                 <link rel="icon" href="/favicon.jpg"/>
                 <meta name={'keywords'} content={'屮唧唧,web3,web3资讯,聚合内容'}/>
                 <meta name={'description'} content={'屮唧唧-web3内容资讯社区，一起唧唧歪歪，欢迎大家来到这里一起唧唧歪歪，有态度、更年轻、有个性的发声根据地'}/>
