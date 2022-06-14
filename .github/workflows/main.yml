@@ -35,16 +35,16 @@ jobs:
         run: sh ./docker-gen.sh
 
       # login aliyun deploy
-      - name: ecs command
-        uses: appleboy/ssh-action@master
-        with:
-          host: "101.201.153.75"
-          username: "root"
-          key: ${{ secrets.ECS_KEY }}
-          fingerprint: ${{ secrets.FINGERPRINT }}
-          port: "80"
-          script: |
-            cd ~
-            docker-compose -f ./docker-compose-chejj/docker-compose.yml pull
-            docker-compose -f ./docker-compose-chejj/docker-compose.yml up -d
-
+#      - name: ecs command
+#        uses: appleboy/ssh-action@master
+#        with:
+#          host: "101.201.153.75"
+#          username: "root"
+#          key: ${{ secrets.ECS_KEY }}
+#          fingerprint: ${{ secrets.FINGERPRINT }}
+#          port: "80"
+#          script: |
+#            cd ~
+#            docker-compose -f ./docker-compose-chejj/docker-compose.yml pull
+#            docker-compose -f ./docker-compose-chejj/docker-compose.yml up -d
+#
