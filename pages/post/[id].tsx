@@ -23,7 +23,7 @@ export default ({data = {}}:any) => {
               // 设置成功
             }
         });
-        
+
     }, [])
     // @ts-ignore
     return <>
@@ -44,7 +44,6 @@ export async function getServerSideProps(context) {
                 'Access-Control-Allow-Origin': '*'
             }
         })
-        console.log(data.data,'>>>>>>>data')
         return {
             props: {
                 data: data.data.data

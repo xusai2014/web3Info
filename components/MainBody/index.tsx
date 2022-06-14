@@ -5,29 +5,15 @@ import axios from 'axios';
 import _ from 'lodash';
 import styles from './index.module.less';
 import  {baseUrl} from '../../config/autoconfig';
+import AVATAR_LIST from "../../config/CONSTANTS";
 export default ({loadStart, setLoadStart, matchParam = {o_name:""}, setShareObj =()=>{}}) => {
 
     const [list, setList] = useState([]);
-    const [videolist, setVideolIst] = useState([]);
 
-    function getVideo() {
-        return axios.get(`${baseUrl}/api/article/videolist`, {
-            withCredentials: true,
-            headers: {
-                'Access-Control-Allow-Origin': '*'
-            }
-        }).then((result) => {
-
-            if (result.data) {
-                const {articleList, page} = result.data.data;
-                setVideolIst(articleList);
-            }
-        })
-    }
 
     function getMore() {
 
-        return axios.get(`${baseUrl}/api/article/list/page?page=${list.length / 20 + 1}&o_name=${matchParam.o_name}`, {
+        return axios.get(`${baseUrl}/api/article/list/page?page=${list.length / 20 + 1}&o_name=${matchParam.o_name}&t_system=2`, {
             withCredentials: true,
             headers: {
                 'Access-Control-Allow-Origin': '*'
