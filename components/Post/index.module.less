@@ -1,0 +1,124 @@
+.container{
+  padding: 10px 23px;
+  width: fit-content;
+  display: flex;
+  border-left: var(--border-line);
+  border-bottom: var(--border-line);
+  border-right: var(--border-line);
+  @media only screen
+  and (max-device-width : 768px){
+    width: 100%;
+    padding: 10px 10px;
+  }
+  .avatar{
+    background: white;
+    border: 1px solid yellow;
+    border-radius: 30px;
+    margin-left:10px;
+    width:60px;
+    height:60px;
+    cursor: pointer;
+    @media only screen
+    and (max-device-width : 768px){
+      margin-left:0px;
+      border-radius: 5px;
+      width: 8vw;
+      height: 8vw;
+    }
+  }
+  .content{
+    margin: 0px 20px 0px 40px;
+    width:  45vw;
+    color: white;
+    font-size:14px;
+    line-height: 22px;
+    font-weight: 200;
+    @media only screen
+    and (max-device-width : 768px){
+      width: 100%;
+      margin: 0px 10px;
+
+    }
+    .name {
+      color: #43e413;
+      font-size: 16px;
+    }
+
+    .expand{
+      display: flex;
+      padding-top: 3px;
+      justify-content: space-between;
+      .more{
+        float: left;
+        padding-right: 5px;
+        color: var(--highlight-color);
+        cursor: pointer;
+      }
+      .time {
+        color: yellow;
+        font-size:12px;
+        float: left;
+      }
+
+    }
+    .href{
+      color: yellow;
+      margin:0 5px 5px;
+      display: block;
+      @media only screen
+      and (max-device-width : 768px){
+        width: 75vw;
+        margin:0 auto 5px;
+      }
+    }
+
+    .title {
+      font-size: 15px;
+      line-height: 20px;
+      font-weight: 500;
+      padding: 5px 0px;
+    }
+  }
+  .extraContent{
+    width: 44vw;
+    margin: auto;
+    min-height: 5vw;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #bfffab;
+    margin-top:5px;
+    align-items: center;
+    display: flex;
+    @media only screen
+    and (max-device-width : 768px){
+      width: 75vw;
+    }
+    .contentBlock{
+      border-radius: 5px;
+      width: inherit;
+      outline: none;
+      padding: 0;
+      margin: 0;
+    }
+
+  }
+  .tags{
+    margin: 5px 0px;
+    line-height: 23px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    @media only screen
+    and (max-device-width : 768px) {
+      width: 70vw;
+    }
+    > a{
+      padding: 1px 3px;
+      margin: 2px 5px;
+      color: #2b0fe8;
+      background-color: var(--highlight-color);
+      border-radius: 5px;
+      white-space: nowrap;
+      font-size: 12px;
+    }
+  }
+}

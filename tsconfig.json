@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowUmdGlobalAccess": true,
+    "alwaysStrict": true,
+    "assumeChangesOnlyAffectDirectDependencies": true,
+    "checkJs": true,
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "locale": "zh-CN",
+    "module": "esnext",
+    "target": "ESNext",
+    "strictNullChecks": true,
+    "outDir": "../lib",
+    "typeRoots": [
+      "./node_modules/@types",
+      "./typings"
+    ],
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "include": [
+    "pages/**/*",
+    "global.d.ts"
+  ],
+  "nocheck": [
+    "components/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

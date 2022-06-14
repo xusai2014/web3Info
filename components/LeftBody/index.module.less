@@ -1,0 +1,96 @@
+:global{
+  .iconFont{
+    @media only screen
+    and (max-device-width : 768px){
+      height:30px;
+
+    }
+  }
+}
+
+.logo{
+  @media only screen and (max-device-width : 768px){
+    display:none;
+
+  }
+
+}
+.container{
+  width:250px;
+  position:fixed;
+  height: 100%;
+  border-right: 1px solid rgba(128, 128, 128, 0.23);
+  position: fixed;
+  @media only screen
+  and (max-device-width : 768px){
+    background: rgb(103 0 189);
+    width: 100%;
+    bottom: 0px;
+    height: 50px;
+    flex-direction: row;
+    display: flex;
+    position: fixed;
+
+  }
+}
+.iconCon {
+  width: 250px;
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media only screen
+  and (max-device-width : 768px){
+    padding: 0px;
+    svg{
+      height: 20px;
+    }
+  }
+  .title {
+    font-size:35px;
+    color:white;
+    padding: 0px 10px;
+    @media only screen
+    and (max-device-width : 768px){
+      display:none;
+
+    }
+  }
+  .active{
+    color: #43e413;
+  }
+  &:hover{
+    @media only screen
+    and (min-device-width : 768px){
+      background-color: yellow;
+    }
+
+    cursor: pointer;
+    border-radius: 20px;
+    @media only screen
+    and (max-device-width : 768px){
+      border-radius: 0px;
+    }
+    .title{
+      color: #43e413;
+    }
+    path {
+      fill:#43e413;
+    }
+  }
+
+}
+.copyright{
+  color: yellow;
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: center;
+  bottom: 100px;
+  position: absolute;
+  width: 100%;
+  line-height: 20px;
+  @media only screen
+  and (max-device-width : 768px){
+    display: none;
+  }
+}
