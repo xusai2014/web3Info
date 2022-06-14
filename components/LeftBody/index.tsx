@@ -54,7 +54,7 @@ export default ({setLoadStart, loadStart}) => {
     return (<div
         className={styles.container}
     >
-        <img width='250' height={'184'} src={'/logo.svg'} className={styles.logo}/>
+        <img width='250' height={'184'} src={'/logo.png'} className={styles.logo}/>
         {
             [{
                 title: '内容',
@@ -101,7 +101,7 @@ export default ({setLoadStart, loadStart}) => {
            
         `}</style>
         <div className={styles.copyright}>
-            ©2020-2020 车唧唧工作室
+            ©2020-2022 屮唧唧工作室
             <br/>
             关于我们
         </div>

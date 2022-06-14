@@ -17,8 +17,8 @@ export default function Home({setLoadStart, loadStart}) {
     useEffect(() => {
         const {
             url = window.location.href,
-            title = '车唧唧-汽车新势力，一起唧唧歪歪！', // 分享标题
-            description = '车唧唧口号是汽车社区新势力，欢迎大家来到这里一起唧唧歪歪，有态度、更年轻、有个性的汽车发声根据地', // 分享描述,
+            title = '屮唧唧-web3 聚合资讯，一起唧唧歪歪！', // 分享标题
+            description = '屮唧唧-web3内容资讯社区，一起唧唧歪歪，欢迎大家来到这里一起唧唧歪歪，有态度、更年轻、有个性的发声根据地', // 分享描述,
             pic = `${window.location.origin}/favicon.jpg`, // 分享图标,
         } = shareObj;
         shareFunc(global.wx,{
@@ -36,8 +36,8 @@ export default function Home({setLoadStart, loadStart}) {
             <Head>
                 <title>车唧唧</title>
                 <link rel="icon" href="/favicon.jpg"/>
-                <meta name={'keywords'} content={'车唧唧,汽车社区,汽车界的小家雀儿,汽车快讯'}/>
-                <meta name={'description'} content={'车唧唧口号是汽车社区新势力，欢迎大家来到这里一起唧唧歪歪，有态度、更年轻、有个性的汽车发声根据地'}/>
+                <meta name={'keywords'} content={'屮唧唧,web3,web3资讯,聚合内容'}/>
+                <meta name={'description'} content={'屮唧唧-web3内容资讯社区，一起唧唧歪歪，欢迎大家来到这里一起唧唧歪歪，有态度、更年轻、有个性的发声根据地'}/>
             </Head>
             <div>
                 <div className={styles.containerTop}>

@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "ssr",
+      name: "web3Info",
       script: "next start -p 80",
       instances: 1,
       watch: false,
