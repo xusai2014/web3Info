@@ -4,6 +4,11 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@ethersproject/contracts": "^5.6.2",
+    "@funcblock/dapp-sdk": "^0.1.16",
+    "@usedapp/core": "^1.0.14",
+    "@zeit/next-less": "^1.0.1",
+    "@zeit/next-stylus": "^1.0.1",
     "antd": "^4.4.0",
     "axios": "^0.21.0",
     "less": "^3.11.1",
@@ -13,16 +18,13 @@
     "pm2": "^4.5.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "@zeit/next-less": "^1.0.1",
-    "@zeit/next-stylus": "^1.0.1",
     "styled-jsx": "^3.3.0"
-
   },
   "optionalDependencies": {
     "@types/node": "^14.0.5",
-    "postcss-css-variables": "^0.17.0",
     "@types/react": "^16.9.35",
     "node-sass": "^7.0.1",
+    "postcss-css-variables": "^0.17.0",
     "styled-jsx-plugin-sass": "^1.0.0",
     "typescript": "^3.9.3"
   },
